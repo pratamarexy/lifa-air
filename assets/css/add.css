@@ -1,0 +1,55 @@
+.region{
+   
+    padding-top: 8px;
+    font-size: 13px;
+    padding-left: 20px;
+    margin-left: 10px;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    font-family: "GothamBold",sans-serif;
+}
+.region a{
+    color: #fff;
+    text-decoration: none;
+}
+.region .dropdown-menu{
+    left: auto;
+    right: 0;
+    width: auto;
+    background: #221e20;
+    margin-top: 8px;
+    border-radius: 0;
+}
+.region .dropdown-menu a.dropdown-item{
+    color: #fff;
+}
+.region .dropdown-menu a.dropdown-item:hover, .region .dropdown-menu a.dropdown-item:focus{
+    background-color: #313131;
+}
+.region .dropdown-item{
+    padding: 7px 15px;
+    font-size: 12px;
+}
+header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+    font-size: 13px;
+    margin-top: 8px;
+    padding: 20px 13px;
+}
+header .navbar .navbar-brand {
+    margin-right: 0px;
+    margin-top: 0px;
+}
+.carousel-indicators li{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #636363;
+}
+.hero-slider{
+    margin-bottom: 70px;
+}
+.carousel-indicators{
+    bottom: -60px;
+}
+.air-quality{
+    margin-bottom: 80px;
+}
