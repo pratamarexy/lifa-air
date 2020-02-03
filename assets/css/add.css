@@ -53,3 +53,6 @@ header .navbar .navbar-brand {
 .air-quality{
     margin-bottom: 80px;
 }
+.hide{
+    display: none !important;
+}

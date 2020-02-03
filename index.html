@@ -34,7 +34,7 @@
 	<header>
 		<div class="container">
 			<nav class="navbar navbar-expand-md navbar-light">
-				<a class="navbar-brand" href="#">
+				<a class="navbar-brand" href="index.html">
 					<img src="assets/images/logo.png" alt="">
 				</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarPrime"
@@ -46,17 +46,17 @@
 				<div class="collapse navbar-collapse" id="navbarPrime">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item">
-							<a class="nav-link" href="#">About Us</a>
+							<a class="nav-link" href="about-comback.html">About Us</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Products</a>
+							<a class="nav-link" href="smart-air-purifier.html">Products</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Technology</a>
+							<a class="nav-link" href="technology.html">Technology</a>
 						</li>
 
 						<li class="nav-item">
-							<a class="nav-link" href="#">Where to Buy</a>
+							<a class="nav-link" href="where-to-buy.html">Where to Buy</a>
 						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -73,7 +73,7 @@
 							</div>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Contact Us</a>
+							<a class="nav-link" href="contact.html">Contact Us</a>
 						</li>
 					</ul>
 					<div class="region">
@@ -268,40 +268,39 @@
 				<div class="col-md-3">
 					<h4>About us</h4>
 					<ul>
-						<li><a href="#">Company Background</a></li>
-						<li><a href="#">History</a></li>
-						<li><a href="#">Accolades/Awards</a></li>
-						<li><a href="#">Healthcare/govt certifications</a></li>
+						<li><a href="about-comback.html">Company Background</a></li>
+						<li><a href="about-history.html">History</a></li>
+						<li><a href="about-award.html">Accolades/Awards</a></li>
+						<li><a href="about-certificate.html">Healthcare/govt certifications</a></li>
 					</ul>
 
 					<h4>Products</h4>
 					<ul>
-						<li><a href="#">Smart Air Purifier</a></li>
-						<li><a href="#">Smart Controller</a></li>
-						<li><a href="#">Accessories</a></li>
-						<li><a href="#">Anti-Pollution mask</a></li>
+						<li><a href="smart-air-purifier.html">Smart Air Purifier</a></li>
+						<li><a href="smart-controler.html">Smart Controller</a></li>
+						<li><a href="accesories.html">Accessories</a></li>
+						<li><a href="anti-pollution-mask.html">Anti-Pollution mask</a></li>
 					</ul>
 				</div>
 				<div class="col-md-3">
 					<h4>Support</h4>
 					<ul>
-						<li><a href="#">Quickstart Guides</a></li>
-						<li><a href="#">User manuals</a></li>
-						<li><a href="#">App download</a></li>
+						<li><a href="download.html">User manuals</a></li>
+						<li><a href="download.html">App download</a></li>
 					</ul>
 
 				</div>
 				<div class="col-md-2">
 					<h4>Blog</h4>
 					<ul>
-						<li><a href="#">Product Registration</a></li>
-						<li><a href="#">Warranty info</a></li>
-						<li><a href="#">Privacy Policy</a></li>
-						<li><a href="#">GDPR Statement </a></li>
+						<li><a href="product-registration.html">Product Registration</a></li>
+						<li><a href="warranty.html">Warranty info</a></li>
+						<li><a href="privacy-policy.html">Privacy Policy</a></li>
+						<li><a href="gdpr.html">GDPR Statement </a></li>
 					</ul>
 
-					<a href="#" class="heading">Where to Buy</a>
-					<a href="#" class="heading">Contact Us</a>
+					<a href="where-to-buy.html" class="heading">Where to Buy</a>
+					<a href="contact.html" class="heading">Contact Us</a>
 				</div>
 				<div class="col-md-4 text-right">
 
@@ -345,6 +344,9 @@
 				}
 			]
 		});
+		$(".playVid").on("click", function() {
+            document.getElementById("video-landing-page").play(), $(this).addClass("hide")
+        });
 
 		$(document).on('click', 'a[href^="#"].scrolldown', function (e) {
 			e.preventDefault();
