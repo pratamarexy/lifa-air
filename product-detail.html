@@ -139,13 +139,39 @@
 					</div>
 				</div>
 			</div>
-			<div class="container-fluid">
+			<div class="container-fluid sc-img">
 				<div class="row">
 					<div class="col px-0">
-						<img src="assets/images/bg-prod-2.jpg" class="img-fluid" alt="">
+						<img src="assets/images/clean-proces.gif" class="img-fluid" alt="">
 					</div>
 				</div>
 			</div>
+			<div class="sc-wrap">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="sc-text">
+								<span>CADR (Clean Air Delivery Rate)</span>
+								<h3><div class="count d-inline">450</div><span>m³/h</span></h3>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="sc-text">
+								<span>Recommended area up to</span>
+								<h3><div class="count d-inline">54</div><span>m2</span></h3>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="sc-text">
+								<span>CADR (Clean Air Delivery Rate)</span>
+								<h3><div class="count d-inline">18</div><span>mins</span></h3>
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+			
 		</div>
 
 		<div class="detail-2">
@@ -457,6 +483,17 @@
 		</div>
 	</footer>
 	<script type="text/javascript">
+		$('.count').each(function () {
+			$(this).prop('Counter',0).animate({
+				Counter: $(this).text()
+			}, {
+				duration: 2000,
+				easing: 'swing',
+				step: function (now) {
+					$(this).text(Math.ceil(now));
+				}
+			});
+		});
 		$('.products-slide').slick({
 			infinite: true,
 			slidesToShow: 3,
